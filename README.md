@@ -16,11 +16,25 @@
 
 ## 安装与使用
 
+### 通过 npx 安装
+
+准备好 Node.js 22.20 或更高版本，在要使用技能的项目目录中运行
+
+```sh
+npx skills add berstpander/just-within-reach
+```
+
+按提示选择要使用的助手，例如 Codex。默认安装到当前项目；如果希望在多个项目中使用，可以在命令末尾加上 `-g`。[skills CLI 官方安装说明](https://github.com/vercel-labs/skills#install-a-skill)
+
+### 手动安装
+
 在支持目录式 Agent Skills 的助手中，把本仓库克隆或下载到该助手读取技能的目录，保留 `just-within-reach/SKILL.md` 的层级。例如，在技能目录中运行：
 
 ```sh
 git clone https://github.com/berstpander/just-within-reach.git
 ```
+
+### 开始使用
 
 按助手的方式刷新技能，然后说「用恰好够得到，帮我找一个适合现在的练习」。支持显式技能调用的助手也可以用 `$just-within-reach`。普通聊天助手可以直接读取或粘贴 [SKILL.md](SKILL.md) 的正文，再描述自己的目标。运行只需文本对话，无需 API 密钥、网络服务或额外软件包。
 
